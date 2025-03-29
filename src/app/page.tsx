@@ -1,7 +1,10 @@
+"use client";
+
 import Link from "next/link";
 import style1 from "@/styles/app.module.css";
 import style2 from "@/styles/customCSS.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import TableComponent from "@/components/app.table";
 
 export default function Home() {
   return (
@@ -19,6 +22,7 @@ export default function Home() {
           <Link href={`/tiktok`}>Tiktok</Link>
         </li>
       </ul>
+      <TableComponent />
     </div>
   );
 }

@@ -1,5 +1,10 @@
-import "./globals.css";
+"use client";
+// import "./globals.css";
+
 import { Inter } from "next/font/google";
+import AppHeader from "@/components/app.header";
+import AppFooter from "@/components/app.footer";
+import Container from "react-bootstrap/Container";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +23,9 @@ export default function RootLayout({
       {/* Layout UI */}
       {/* Place children where you want to render a page or nested layout */}
       <body className={inter.className}>
-        <header>Header welcome to</header>
-        {children}
-        <footer>footer welcome to</footer>
+        <AppHeader />
+        <Container>{children}</Container>
+        <AppFooter />
       </body>
     </html>
   );

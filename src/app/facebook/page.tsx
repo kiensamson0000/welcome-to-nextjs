@@ -12,7 +12,7 @@ const Facebook = () => {
 
   return (
     <div>
-      facebook page
+      <span>facebook page</span>
       <div>
         <Button as="a" variant="primary" onClick={() => handleBtn()}>
           Back Home
